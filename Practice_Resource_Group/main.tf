@@ -21,6 +21,10 @@ resource "azurerm_resource_group" "practice-2" {
   location = "West Europe"
 }
 
+resource "azurerm_resource_group" "practice-3" {
+  name     = "practice_resource_group-3"
+  location = "West Europe"
+}
 
 resource "azurerm_storage_account" "practice1" {
   depends_on               = [azurerm_resource_group.practice]
